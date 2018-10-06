@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Example Page</h1>
+<p style="color: sandybrown">This Page Is Practical Page</p>
+
+<form id="Info" >
+    <fieldset style="padding: 10px">
+        <legend>Contact Info :</legend>
+
+        <label for="FN">First Name :</label><br />
+        <input id="FN" type="text" style="width:100%" required>
+        <br>
+
+        <label for="LN">Last Name :</label><br />
+        <input id="LN" type="text" style="width:100%">
+        <br>
+        
+        <label for="Age">Age :</label><br />
+        <input id="Age" type="number" min="0" style="width:100%">
+    
+    </fieldset>
+
+    <fieldset style="padding: 10px">
+        <legend>Additional Info :</legend>
+        
+        <label for="Status">Status :</label><br />
+        <select id="Status" style="width:100%">
+            <option value=""></option>
+            <option value="Student">Student</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Other">Other</option>
+        </select>
+    
+    </fieldset>
+
+    <div class="container">
+        <button class="btn btn-primary" onclick="validateForm()" type="button" style="margin: 10px">Save</button>
+        <button class="btn btn-warning" type="reset" style="margin: 10px">Reset</button>
+    
+    </div>
+
+</form>
+
+<script>
+    function validateForm() {
+        var person = {
+            firstName: document.getElementById("FN").value,
+            lastName: document.getElementById("LN").value,
+            age: document.getElementById("Age").value,
+            status: document.getElementById("Status").value
+        };
+
+        if (!person.firstName) {
+            alert("First Name is Required");
+        }
+        if (!person.lastName) {
+            alert("Last Name is Required");
+        }
+        if (!person.age) {
+            alert("Age is Required");
+        }
+        if (!person.status) {
+            alert("Status is Required");
+        }
+        else {
+            console.log(person);
+            alert("Done");
+            document.getElementById("Info").reset();
+        }
+    }
+</script>
