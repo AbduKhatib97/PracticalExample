@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<br/>
+<div class="container">
+    <h2>Registration</h2>
+</div>
+<div class="container">
+    <form class="form-group">
+        <h3>Register Your Information :</h3>
+        <div class="row">
+            <div class="col-md-6  my-2">
+                <input class="form-control" type="text" name="FirstName" id="fn" placeholder="First Name">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control  my-2" type="text" name="LastName" id="ln" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6  my-2">
+                <input class="form-control" type="text" name="Faculty" id="fclt" placeholder="Faculty">
+            </div>
+            <div class="col-md-6  my-2">
+                <input class="form-control" type="number" name="Year" id="year" placeholder="Year">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12  my-2">
+                <select class="form-control" name="Specification" id="Spec">
+                    <option selected>Specification</option>
+                    <option value="">MIS</option>
+                    <option value="">Accounting</option>
+                    <option value="">BMA</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12  my-2">
+                <textarea class="form-control" name="Notes" id="notes" cols="10" rows="10" placeholder="Notes"></textarea>
+            </div>
+        </div>
+        <div class="pretty p-icon p-jelly p-round p-bigger   my-2">
+            <input type="checkbox" name="AgreeOnTerms" id="aot" />
+            <div class="state p-success">
+                <i class="icon fa fa-check"></i>
+                <label>Agree On Terms</label>
+            </div>
+        </div>
+        <button class="float-right btn btn-primary" type="submit" id="save">Save</button>
+    </form>
+</div>

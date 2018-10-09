@@ -2,10 +2,51 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>dbb4ebee-8fb5-4735-9a47-a727f73b53d4</UserSecretsId>
+    <DockerTargetOS>Windows</DockerTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\lib\pretty-checkbox\.npmignore" />
+    <None Include="wwwroot\lib\pretty-checkbox\.stylelintrc" />
+    <None Include="wwwroot\lib\pretty-checkbox\.travis.yml" />
+    <None Include="wwwroot\lib\pretty-checkbox\dist\maps\pretty-checkbox.css.map" />
+    <None Include="wwwroot\lib\pretty-checkbox\Gulpfile.js" />
+    <None Include="wwwroot\lib\pretty-checkbox\LICENSE" />
+    <None Include="wwwroot\lib\pretty-checkbox\README.md" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\pretty-checkbox.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\elements\default\_fill.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\elements\default\_outline.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\elements\default\_thick.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\elements\font-icon\_general.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\elements\image\_general.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\elements\svg\_general.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\elements\switch\_fill.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\elements\switch\_general.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\elements\switch\_slim.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\essentials\_functions.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\essentials\_keyframes.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\essentials\_mixins.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_animation.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_bigger.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_colors.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_curve.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_disabled.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_locked.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_plain.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_print.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_round.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\extras\_toggle.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\states\_focus.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\states\_hover.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\states\_indeterminate.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\_core.scss" />
+    <None Include="wwwroot\lib\pretty-checkbox\src\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
 </Project>
