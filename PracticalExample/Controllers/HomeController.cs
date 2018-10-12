@@ -10,6 +10,7 @@ namespace PracticalExample.Controllers
 {
     public class HomeController : Controller
     {
+        #region Default
         public IActionResult Index()
         {
             return View();
@@ -39,8 +40,111 @@ namespace PracticalExample.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        #endregion
+
         public IActionResult Registration()
         {
+            return View();
+        }
+
+        public IActionResult Files()
+        {
+            var files = new List<Models.Files>()
+            {
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                },
+                new Models.Files
+                {
+                    Id = 1,
+                    Name = "adasdasdasd",
+                    Description = "adasdasdasd",
+                    Url = "adasdasdasd",
+                    ContentType = "adasdasdasd"
+                }
+            };
+
+            var vm = new ViewModels.FilesViewModel(files);
+
+            ViewData.Add("vm", vm);
             return View();
         }
     }

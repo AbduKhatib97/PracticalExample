@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Files";
+    var vm = ViewData["vm"] as PracticalExample.ViewModels.FilesViewModel;
+
+}
+
+<div class="container">
+    <h2>Files</h2>
+</div>
+<div class="container">
+    <div class="row">
+
+        @if (true)
+        {
+            foreach (var File in vm.Files.Take(3))
+            {
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div id="@File.Id" class="card m-3">
+                        <img class="card-img-top" src="~/images/FileIcon.png" alt="@File.ContentType">
+                        <div class="card-body">
+                            <h5 class="card-title">@File.Name</h5>
+                            <p class="card-text">@File.Description</p>
+                            <hr/>
+                            <a href="@File.Url" class="card-link btn-link text-primary">Download</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <h2>There Is No Files To Show !</h2>
+        }
+    </div>
+</div>

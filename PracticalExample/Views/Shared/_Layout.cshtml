@@ -21,7 +21,7 @@
         @* Don`t Forget To Add CDN Links For CSS Libraries Before Deploy*@
     </environment>
 </head>
-<body>
+<body style="background-color : aliceblue;">
     <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
         <div class="container">
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +32,7 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Registration">Registration</a>
+                    <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Files">Files</a>
                     <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
                     <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                 </div>
@@ -42,7 +43,7 @@
 
     @*<partial name="_CookieConsentPartial" />*@
 
-    <div class="container body-content">
+    <div class="container body-content my-4">
         @RenderBody()
         <hr />
         <footer>
