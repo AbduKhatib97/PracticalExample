@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PracticalExample.Models
 {
-    public class Files
+    public class File
     {
         public int Id { get; set; }
         public string Name { get; set; }

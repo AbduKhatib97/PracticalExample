@@ -7,8 +7,8 @@ namespace PracticalExample.ViewModels
 {
     public class FilesViewModel
     {
-        public IEnumerable<Models.Files> Files { set; get; }
+        public IEnumerable<Models.File> Files { set; get; }
 
-        public FilesViewModel(IEnumerable<Models.Files> files) => Files = files;
+        public FilesViewModel(IEnumerable<Models.File> files) => Files = files;
     }
 }

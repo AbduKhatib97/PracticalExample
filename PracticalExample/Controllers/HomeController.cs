@@ -50,9 +50,9 @@ namespace PracticalExample.Controllers
 
         public IActionResult Files()
         {
-            var files = new List<Models.Files>()
+            var files = new List<Models.File>()
             {
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -60,7 +60,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -68,7 +68,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -76,7 +76,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -84,7 +84,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -92,7 +92,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -100,7 +100,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -108,7 +108,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -116,7 +116,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -124,7 +124,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
@@ -132,7 +132,7 @@ namespace PracticalExample.Controllers
                     Url = "adasdasdasd",
                     ContentType = "adasdasdasd"
                 },
-                new Models.Files
+                new Models.File
                 {
                     Id = 1,
                     Name = "adasdasdasd",
