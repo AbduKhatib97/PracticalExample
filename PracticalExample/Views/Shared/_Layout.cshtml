@@ -22,24 +22,7 @@
     </environment>
 </head>
 <body style="background-color : aliceblue;">
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-        <div class="container">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">PracticalExample</a>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Registration">Registration</a>
-                    <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Files">Files</a>
-                    <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
-                    <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
+    <partial name="_Navbar" />
 
     @*<partial name="_CookieConsentPartial" />*@
 
